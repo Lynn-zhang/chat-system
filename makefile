@@ -65,10 +65,7 @@ clean:
 
 .PHONY:output
 output:
-	mkdir -p output/server/conf
-	mkdir -p output/server/log
 	mkdir -p output/client
 	cp $(SERVER_BIN) output/server
 	cp $(CLIENT_BIN) output/client
 	cp $(PLUGIN)/ctrl_server.sh output/server
-	cp $(CONF)/server.conf output/server/conf
